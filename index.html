@@ -17,7 +17,7 @@
                 <input type="email" name="Email" id="inpemail">
                 <p class="txtsenha">Password</p>
                 <input type="password" name="Senha" id="inpsenha">
-                <input type="button" value="Login" class="btlogin">
+                <input type="button" value="Login" class="btlogin" onclick="pagina_inicial()">
                 <input type="button" value="Create Account" class="btcreateacount">
                 <input type="button" value="Forgot my password" class="btforgot">
             </div>
@@ -26,5 +26,10 @@
         <div class="footer">
         </div> 
     </div>
+    <script>
+       function pagina_inicial() {
+            window.location.href = "inicial.html";
+        }
+    </script>
 </body>
 </html>

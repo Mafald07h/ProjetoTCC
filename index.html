@@ -18,7 +18,7 @@
                 <p class="txtsenha">Password</p>
                 <input type="password" name="Senha" id="inpsenha">
                 <input type="button" value="Login" class="btlogin" onclick="pagina_inicial()">
-                <input type="button" value="Create Account" class="btcreateacount">
+                <input type="button" value="Create Account" class="btcreateacount" onclick="pagina_criacao()">
                 <input type="button" value="Forgot my password" class="btforgot">
             </div>
             <input type="button" value="Off" class="btoff">
@@ -29,6 +29,9 @@
     <script>
        function pagina_inicial() {
             window.location.href = "inicial.html";
+        }
+        function pagina_criacao(){
+            window.location.href ="cadastrar.html";
         }
     </script>
 </body>

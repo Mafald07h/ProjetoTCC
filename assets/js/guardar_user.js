@@ -1,6 +1,13 @@
 import sqlite3 from 'sqlite3'
 import {open} from 'sqlite'
 
+
+let name = window.document.getElementById('nameuser').value;
+let date = window.document.getElementById('dateuser').value;
+let email = window.document.getElementById('emailuser').value;
+let password = window.document.getElementById('passuser').value;
+
+
 async function criarTabelaDeUsuarios(name,date,email,password) {
     const db = await open({
         filename: 'assets/database/users.db',
@@ -11,5 +18,3 @@ async function criarTabelaDeUsuarios(name,date,email,password) {
     db.run('INSERT INTO users (name,date,email,password) VALUES (?,?,?,?) ', [name,date,email,password]);
 
 }
-
-criarTabelaDeUsuarios('ZyxQww','1998-07-14','filip1nry@gmail.com','Henzy21#qwe');
